@@ -1,6 +1,6 @@
 var app = angular.module('routingApp', ['ngRoute']);
 
-app.config(function($routeProvider, $locationProvider){
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 
     $locationProvider.html5Mode(true);
 
@@ -8,11 +8,11 @@ app.config(function($routeProvider, $locationProvider){
         {
             templateUrl: '/views/home.html',
             controller: 'mainController'
-        }).when('/register',
+        }).when('/events',
         {
-            templateUrl: '/views/register.html',
-            controller: 'registerController'
-        }).when('/volunteer',
+            templateUrl: '/views/events.html',
+            controller: 'eventsController'
+        }).when('/volunteer.html',
         {
             templateUrl: '/views/volunteer.html',
             controller: 'volunteerController'
@@ -20,16 +20,16 @@ app.config(function($routeProvider, $locationProvider){
             templateUrl: '/views/contact.html',
             controller: 'contactController'
         });
-});
-app.controller('mainController', function($scope){
+}]);
+app.controller('mainController',['$scope', function($scope){
     $scope.message = "Welcome to the Southwest Coder Dojo - Home Page";
-});
-app.controller('registerController', function($scope){
+}]);
+app.controller('registerController', ['$scope', function($scope){
     $scope.message = "Welcome to the Southwest Coder Dojo - Registration Page";
-});
-app.controller('volunteerController', function($scope){
+}]);
+app.controller('volunteerController', ['$scope', function($scope){
     $scope.message = "Welcome to the Southwest Coder Dojo - Volunteer Page";
-});
-app.controller('contactController', function($scope){
+}]);
+app.controller('contactController', ['$scope', function($scope){
     $scope.message = "Welcome to the Southwest Coder Dojo - Contact Us Page";
-});
+}]);

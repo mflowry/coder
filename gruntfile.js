@@ -32,10 +32,18 @@ module.exports = function(grunt){
                 expand: true,
                 cwd: 'client',
                 src: [
-                    "styles/style.css"
+                    "stylesheets/style.css"
                 ],
-                "dest": "server/public/assets"
+                "dest": "server/public/"
             }
+            //views: {
+            //    expand: true,
+            //    cwd: 'client',
+            //    src: [
+            //        "views/*.html"
+            //    ],
+            //    "dest": "server/public/"
+            //}
         }
     });
 

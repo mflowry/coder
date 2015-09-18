@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
   res.sendFile(path.join(__dirname, '../public/views/index.html'));
 });
 
-router.get('/*', function(req,res,next){
-  res.redirect('/');
-});
+//router.get('/*', function(req,res,next){
+//  res.redirect('/');
+//});
 
 module.exports = router;
