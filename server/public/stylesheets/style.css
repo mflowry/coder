@@ -1,26 +1,73 @@
-.topbar h1 {
+body {
+  margin: 0;
+  border: 0;
+  font-family: "ubuntu", "tahoma", "helvetica", "sans-serif";
+  font-size: 18/20px;
+  position: relative;
+
+}
+div {
+  display: block;
+}
+.header {
+  background-color: #FF5300;
+}
+.header h1 {
   font-size: 250%;
   color: white;
-  text-align: right;
-  padding-right: 50px;
-  height: 50px;
-}
-.jumbotron {
-  height: 250px;
-}
-.container {
-  height: 250px;
-}
-/*.page-header{*/
-  /*display: block;*/
-  /*float: left;*/
-/*}*/
-h2 {
-  color: gray;
-}
-.row{
   text-align: center;
 }
-.btn-lg{
-  margin-top: 15px;
+.navbar {
+  padding-left: 200px;
+  padding-right: 200px;
+  height: 40px;
 }
+.nav-item {
+  padding: 8px;
+  font-size: 80%;
+  display: inline;
+}
+.nav-item a{
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  /*display: inline;*/
+}
+.intro {
+  padding-left: 200px;
+  padding-right: 100px;
+}
+.intro h2 {
+  padding-top: 30px;
+}
+.intro-end {
+  padding-bottom: 20px;
+}
+.intro img {
+  width:295px;
+  height:232px;
+  float: left;
+  padding: 25px 25px 25px 0;
+}
+.why{
+  background-color: #cccccc;
+  padding-left: 200px;
+  padding-right: 100px;
+}
+.why h2 {
+  padding-top: 30px;
+}
+.why h2 p{
+  float: left;
+  display: inline;
+}
+.why-end{
+  padding-bottom: 30px;
+}
+iframe {
+  float: right;
+  padding-right: 100px;
+  background-color: #cccccc;
+}
+
