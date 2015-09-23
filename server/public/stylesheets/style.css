@@ -5,6 +5,7 @@ body {
   font-family: "ubuntu", "tahoma", "helvetica", "sans-serif";
   font-size: 18/20px;
   position: relative;
+  background-color: #f5f5f5;
 }
 div {
   display: block;
@@ -21,22 +22,22 @@ div {
 }
 .navbar {
   padding-left: 200px;
-  padding-right: 200px;
+  padding-right: 140px;
   height: 40px;
   /*position: fixed;*/
 }
 .nav-item {
   padding: 5px;
-  font-size: 75%;
   display: inline;
 }
 .nav-item a{
   text-transform: uppercase;
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 75%;
 }
 .intro {
+  background-color: #f5f5f5;
   padding-left: 200px;
   padding-right: 100px;
 }
@@ -55,21 +56,18 @@ div {
 .why{
   background-color: #434343;
   padding-left: 200px;
-  padding-right: 200px;
+  padding-right: 140px;
 }
 .why h2 {
   padding-top: 30px;
+  color: #f5f5f5;
 }
-.why h2 p{
-  float: left;
-  display: inline-block;
-}
-.why-end{
-  padding: 0 0 200px 200px;
+.why p {
+  color: #f5f5f5;
 }
 iframe {
-  margin: 20px auto;
-  float: top;
+  margin: 20px auto 30px;
+  background-color: #434343;
 }
 .events {
   background-color: #cccccc;
