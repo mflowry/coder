@@ -1,10 +1,10 @@
 body {
   margin: 0;
   border: 0;
+  padding: 0;
   font-family: "ubuntu", "tahoma", "helvetica", "sans-serif";
   font-size: 18/20px;
   position: relative;
-
 }
 div {
   display: block;
@@ -13,6 +13,8 @@ div {
   background-color: #FF5300;
 }
 .header h1 {
+  margin-top: 0;
+  padding-top: 0;
   font-size: 250%;
   color: white;
   text-align: center;
@@ -21,10 +23,11 @@ div {
   padding-left: 200px;
   padding-right: 200px;
   height: 40px;
+  /*position: fixed;*/
 }
 .nav-item {
-  padding: 8px;
-  font-size: 80%;
+  padding: 5px;
+  font-size: 75%;
   display: inline;
 }
 .nav-item a{
@@ -32,7 +35,6 @@ div {
   color: white;
   text-decoration: none;
   font-size: 16px;
-  /*display: inline;*/
 }
 .intro {
   padding-left: 200px;
@@ -51,23 +53,37 @@ div {
   padding: 25px 25px 25px 0;
 }
 .why{
-  background-color: #cccccc;
+  background-color: #434343;
   padding-left: 200px;
-  padding-right: 100px;
+  padding-right: 200px;
 }
 .why h2 {
   padding-top: 30px;
 }
 .why h2 p{
   float: left;
-  display: inline;
+  display: inline-block;
 }
 .why-end{
-  padding-bottom: 30px;
+  padding: 0 0 200px 200px;
 }
 iframe {
-  float: right;
-  padding-right: 100px;
+  margin: 20px auto;
+  float: top;
+}
+.events {
   background-color: #cccccc;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.faqs {
+  background-color: #f75d0a;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.about {
+  background-color: #ff9e0d;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
