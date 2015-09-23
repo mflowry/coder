@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" >
+    <link rel="stylesheet" href="/vendors/pure-release-0.6.0/pure.min.css" >
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <link rel="stylesheet" href="/vendors/pure-release-0.6.0/pure.min.css/grids-responsive-old-ie-min.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="/vendors/pure-release-0.6.0/pure.min.css/grids-responsive-min.css">
     <!--<![endif]-->
     <link rel='stylesheet' href="/stylesheets/style.css">
     <script type="text/javascript" src="/assets/scripts/jquery-1.11.3.min.js"></script>
@@ -27,13 +27,13 @@
     <h1>Southwest Coder Dojo</h1>
 <!--Navbar-->
 <div class="navbar">
-    <ul class="pure-g">
-        <li class="nav-item pure-u-3-24"><a href="#why">Why?</a></li>
-        <li class="nav-item pure-u-3-24"><a href="#events">Events</a></li>
-        <li class="nav-item pure-u-3-24"><a href="#faqs">FAQs</a></li>
-        <li class="nav-item pure-u-3-24"><a href="#about">About</a></li>
-        <li class="nav-item pure-u-3-24"><a href="#contact">Resources</a></li>
-        <li class="nav-item pure-u-3-24"><a href="./volunteer.html">Volunteer</a></li>
+    <ul class="pure-g main-nav">
+        <li class="nav-item pure-u-4-24"><a href="#why">Why?</a></li>
+        <li class="nav-item pure-u-4-24"><a href="#events">Events</a></li>
+        <li class="nav-item pure-u-4-24"><a href="#faqs">FAQs</a></li>
+        <li class="nav-item pure-u-4-24"><a href="#about">About</a></li>
+        <li class="nav-item pure-u-4-24"><a href="#contact">Resources</a></li>
+        <li class="nav-item pure-u-4-24"><a href="./volunteer.html">Volunteer</a></li>
     </ul>
 </div>
 </div>
@@ -49,11 +49,11 @@
 </div>
 <!--Why Code-->
 <div class="section-body why" id="why">
-    <h2>Why learn to code?</h2>
+    <h2 class="why">Why learn to code?</h2>
     <p class="why">It's fun, and creative!  Make websites, apps, games and more...</p>
     <p class="why">It's an essential skill, like reading or writing.</p>
     <p class="why">Learning to code can lead to a great job! </p>
-    <iframe width="700" height="390" src="https://www.youtube.com/embed/qYZF6oIZtfc" frameborder="0" allowfullscreen></iframe>
+    <iframe class="why" width="700" height="390" src="https://www.youtube.com/embed/qYZF6oIZtfc" frameborder="0" allowfullscreen></iframe>
     <!--<video width="320" height="240" controls>-->
         <!--<source src="movie.mp4" type="video/mp4">-->
         <!--<source src="movie.ogg" type="video/ogg">-->
@@ -62,25 +62,75 @@
 </div>
 <!--Events-->
 <div class="section-body events" id="events">
+    <h2 class="events">Events</h2>
+    <p class="events">Dojo meetings are intended for beginners.  At the Dojo we'll work through an online tutorial together. Mentors can help with personal coding project questions at the end of the meeting.</p>
+    <p class="events"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Register </a>to reserve a ticket and bring your laptop, charger and earbuds.</p>
+    <p class="events"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Next Dojo: </a>Saturday, October 31, 3-4:30pm Walker Library</p>
+    <p class="events">Subscribe to receive email updates about future Dojo events.</p>
+    <img class="teen" id="one" src="images/teen1.jpg" alt="Teens at a computer"/>
+    <img class="teen" id="two" src="images/teen2.jpg" alt="Teens in the computer center"/>
+    <form>
+        <input class="events" type="email" placeholder="Your email address">
+    </form>
 </div>
 <!--FAQs-->
 <div class="section-body faqs" id="faqs">
-
+    <h2 class="faqs">Frequently Asked Questions</h2>
+    <p class="faqs q">What is a Dojo?</p>
+    <p class="faqs a">It's a club where kids learn to code.</p>
+    <p class="faqs q">How old do you have to be to participate?</p>
+    <p class="faqs a">Our Dojo is for teens ages 13-18.</p>
+    <p class="faqs q">What if my parents want to come along?</p>
+    <p class="faqs a">Parents can find a comfy place to wait for you at the library.  Since parents are not participants, they do not need tickets.</p>
+    <p class="faqs q">Who are the volunteers?</p>
+    <p class="faqs a">Our mentors are members of the community with some coding experience.  Many are parents of Southwest High School students.  All adult volunteers have background checks on file.</p>
+    <p class="faqs q">What should I bring to a Dojo meeting?</p>
+    <p class="faqs a">Bring your laptop, power charger and earbuds.</p>
+    <p class="faqs q">What if I don’t have a laptop?</p>
+    <p class="faqs a">If you have a library card, you can sign up to use a library computer.  Or check out <a href="http://www.minneapolismn.gov/it/inclusion/WCMS1P-105252">this list </a>of low cost computer and internet resources.</p>
 </div>
 <!--About-->
-<div class="section-body" id="about">
+<div class="section-body about contact" id="about contact">
+    <img src="images/dojo logo.png" alt="Coder Dojo International logo"/>
+    <h2 class="about">About Southwest Coder Dojo</h2>
+    <p class="about">Southwest Coder Dojo is a member of <a href="https://coderdojo.com/">Coder Dojo International.</a>  It was founded in partnership with Southwest High School to provide introductory coding experiences for teens in the Southwest Minneapolis area.</p>
+    <p class="about">Many of the volunteers are Southwest High School parents and include professional software developers and software industry professionals from local companies.</p>
+    <!--Contact-->
+    <div class="contact" id="contact">
+        <h2 class="about">Questions? Comments? Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your name">
+            <input type="email" placeholder="Your email">
+            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Your message">
+        </form>
+    </div>
 </div>
-<!--Contact-->
-<div class="section-body" id="contact">
-</div>
+
 <!--Resources-->
-<div class="section-body" id="resources">
+<div class="section-body resources" id="resources">
+    <h2 class="resources">Resources: Online Coding Tutorials</h2>
+    <p class="resources tag"><a href="https://dash.generalassemb.ly/">General Assembly Dash</a></p>
+    <p class="resources descr">Dash teaches HTML, CSS and Javascript through fun onliine projects.</p>
+
+    <p class="resources tag"><a href="https://www.codecademy.com/">CodeAcademy</a></p>
+    <p class="resources descr">Learn to code interactively in HTML, CSS, Javascript, Python, Ruby, PHP and more.</p>
+
+    <p class="resources tag"><a href="https://studio.code.org/flappy/1"> Code.org: Hour of Code</a></p>
+    <p class="resources descr">Watch this tutorial and create your own Flappy Bird game.</p>
+
+    <p class="resources tag"><a href="http://appinventor.mit.edu/explore/ai2/beginner-videos.html">MIT App Inventor</a></p>
+    <p class="resources descr">  Beginner-friendly tutorials to learn the basics of programming apps for Android.</p>
+
+    <p class="resources tag"><a href="https://www.khanacademy.org/computing/computer-programming"> Khan Academy</a></p>
+    <p class="resources descr">Interactive online courses in JavaScript, HTML/CSS, and SQL.</p>
 </div>
 <!--Footer-->
-<div class="section-body" id="footer">
+<div class="section-body footer" id="footer">
+    <p class="footer left">Copyright 2015 Southwest Coder Dojo.</p>
+    <p class="footer left">All rights reserved.</p>
+    <p class="footer right">Facebook and Twitter links</p>
+    <p class="footer right">Privacy Policy</p>
 </div>
 
 </body>
-<!--&lt;!&ndash; ng-view will display injected content &ndash;&gt;-->
-<!--<div id="main" ng-view>-->
-<!--</div>-->
