@@ -142,15 +142,18 @@ iframe {
 .event-text {
   padding-top: 30px;
   display: inline;
-
   font-family: "ubunturegular", "tahoma", "helvetica", "sans-serif";
 }
 h2.event-text {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 p.event-text {
   padding-bottom: 15px;
+}
+li.event-text {
+  /*text-indent: 25px each-line;*/
+
 }
 input.event-text {
   margin: 20px;
