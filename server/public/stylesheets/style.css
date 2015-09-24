@@ -145,15 +145,11 @@ iframe {
   font-family: "ubunturegular", "tahoma", "helvetica", "sans-serif";
 }
 h2.event-text {
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 p.event-text {
   padding-bottom: 15px;
-}
-li.event-text {
-  /*text-indent: 25px each-line;*/
-
 }
 input.event-text {
   margin: 20px;
@@ -209,8 +205,7 @@ h2.contact {
   padding: 10px 0 0 200px;
 }
 .contact input {
-  margin: 10px;
-  margin-left: 220px;
+  margin: 10px 10px 10px 220px;
   width: 250px;
   display: block;
 }
@@ -226,11 +221,11 @@ h2.contact {
 .resources {
   background-color: #cccccc;
   margin: 0;
-  padding: 0 140px 0 200px;
+  padding: 0 140px 0 225px;
 }
 .resources img{
   padding-top: 50px;
-  width: 600px;
+  width: 800px;
 }
 h2.resources{
   padding: 50px 0 15px 20px;
@@ -250,8 +245,7 @@ h2.resources{
   margin: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 80%;
-  /*display: inline-block;*/
+  display: inline-block;
 }
 .footer-text .left{
   float: left;

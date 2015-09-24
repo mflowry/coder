@@ -41,7 +41,7 @@
 
 <!--Intro-->
 <div class="section-body intro" id="intro">
-    <img class="clearfix" src="../images/teen4.jpg" alt="Teens coding"/>
+    <img class="clearfix pure-img" src="../images/teen4.jpg" alt="Teens coding"/>
     <h2>Welcome!</h2>
         <div class="intro-text">
             <p class="intro-text">Southwest Coder Dojo is a coding club for teens who want to learn computer programming.  We are part of an international organization of coding clubs.</p>
@@ -86,8 +86,8 @@
             </form>
     </div>
     <div class="event-imgs pure-u-6-24">
-            <img class="event-imgs" id="one" src="../images/Teen1.jpg" alt="Teens at a computer"/>
-            <img class="event-imgs" id="two" src="../images/teen2.jpg" alt="Teens in the computer center"/>
+            <img class="event-imgs pure-img" id="one" src="../images/Teen1.jpg" alt="Teens at a computer"/>
+            <img class="event-imgs pure-img" id="two" src="../images/teen2.jpg" alt="Teens in the computer center"/>
     </div>
 </div>
 <!--FAQs-->
@@ -108,25 +108,39 @@
 </div>
 <!--About-->
 <div class="section-body about" id="about">
-    <img src="../images/dojo logo.png" alt="Coder Dojo International logo"/>
+    <img class="pure-img" src="../images/dojo logo.png" alt="Coder Dojo International logo"/>
     <h2 class="about">About Southwest Coder Dojo</h2>
     <p class="about">Southwest Coder Dojo is a member of <a href="https://coderdojo.com/">Coder Dojo International.</a>  It was founded in partnership with Southwest High School to provide introductory coding experiences for teens in the Southwest Minneapolis area.</p>
     <p class="about">Many of the volunteers are Southwest High School parents and include professional software developers and software industry professionals from local companies.</p>
     <!--Contact-->
     <div class="contact" id="contact">
         <h2 class="contact">Questions? Comments? Contact Us</h2>
-        <form class="contact">
-            <input class="contact" type="text" name="name" placeholder="Your name">
-            <input class="contact" type="email" placeholder="Your email">
-            <input class="contact" type="text" placeholder="Subject">
-            <input class="contact input-end" type="text" placeholder="Your message">
+        <form class="contact pure-form pure-form-aligned">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label for="name">Name</label>
+                    <input class="contact" type="text" id="name" placeholder="Your name">
+                </div>
+                <div class="pure-control-group">
+                    <label for="email">Email</label>
+                    <input class="contact" type="email" id="email" placeholder="Your email">
+                </div>
+                <div class="pure-control-group">
+                    <label for="Subject">Subject</label>
+                    <input class="contact" type="text" id="Subject" placeholder="Subject">
+                </div>
+                <div class="pure-control-group">
+                    <label for="Message">Message</label>
+                    <input class="contact input-end" type="text" id="Message" placeholder="Your message">
+                </div>
+            </fieldset>
         </form>
     </div>
 </div>
 
 <!--Resources-->
 <div class="section-body resources" id="resources">
-    <img src="../images/teen3.jpg" alt="Gathering of teens with computer"/>
+    <img class="pure-img" src="../images/teen3.jpg" alt="Gathering of teens with computer"/>
     <h2 class="resources">Resources: Online Coding Tutorials</h2>
     <p class="resources tag"><a href="https://dash.generalassemb.ly/">General Assembly Dash</a></p>
     <p class="resources descr">Dash teaches HTML, CSS and Javascript through fun onliine projects.</p>
@@ -138,7 +152,7 @@
     <p class="resources descr">Watch this tutorial and create your own Flappy Bird game.</p>
 
     <p class="resources tag"><a href="http://appinventor.mit.edu/explore/ai2/beginner-videos.html">MIT App Inventor</a></p>
-    <p class="resources descr">  Beginner-friendly tutorials to learn the basics of programming apps for Android.</p>
+    <p class="resources descr">Beginner-friendly tutorials to learn the basics of programming apps for Android.</p>
 
     <p class="resources tag"><a href="https://www.khanacademy.org/computing/computer-programming"> Khan Academy</a></p>
     <p class="resources descr">Interactive online courses in JavaScript, HTML/CSS, and SQL.</p>
