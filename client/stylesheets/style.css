@@ -136,20 +136,31 @@ iframe {
 }
 .events {
   background-color: #cccccc;
-  margin: 0;
-  padding-left: 140px;
-  padding-right: 200px;
+  margin-top: 0;
+  padding: 0 200px 0 140px;
 }
 .event-text {
-  float: left;
-  padding-left: 140px;
+  padding-top: 30px;
   display: inline;
-  max-width: 400px;
+
+  font-family: "ubunturegular", "tahoma", "helvetica", "sans-serif";
+}
+h2.event-text {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+p.event-text {
+  padding-bottom: 15px;
+}
+input.event-text {
+  margin: 20px;
+  padding: 0;
 }
 .event-imgs{
-  float: right;
-  width: 150px;
   margin: 20px;
+  padding: 0;
+  width: 250px;
+  background-color: #cccccc;
 }
 .clearfix {
   overflow: auto;
