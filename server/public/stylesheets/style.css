@@ -70,6 +70,7 @@ div {
   color: white;
   text-align: center;
 }
+
 .navbar {
   height: 30px;
   position: fixed;
@@ -87,7 +88,6 @@ div {
   top: 0;
 }
 .nav-item {
-  padding: 5px;
   display: inline;
 }
 .nav-item a{
@@ -100,52 +100,53 @@ div {
 .intro {
   background-color: #f5f5f5;
   margin: 0;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding: 15px 180px 100px 140px;
 }
-.intro h2 {
-  padding-top: 30px;
+.intro-text {
+  padding: 0;
+  display: inline;
+  max-width: 500px;
 }
 .intro-end {
-  padding-bottom: 20px;
+  display: inline;
+  padding-bottom: 50px;
 }
 .intro img {
-  width:295px;
-  height:232px;
+  width:340px;
   float: left;
-  padding: 25px 25px 25px 0;
+  padding-right: 25px;
 }
 .why{
   background-color: #434343;
   margin: 0;
-  padding-left: 200px;
+  padding-left: 140px;
   padding-right: 200px;
 }
 .why h2 {
-  padding-top: 30px;
+  padding: 50px 0 20px 0;
   color: #f5f5f5;
 }
 .why p {
+  padding-left: 0;
   color: #f5f5f5;
 }
 iframe {
-  margin: 20px auto 30px;
+  margin: 30px 125px 50px;
   background-color: #434343;
-  position: center;
 }
 .events {
   background-color: #cccccc;
   margin: 0;
-  padding-left: 200px;
+  padding-left: 140px;
   padding-right: 200px;
 }
-p.events {
+.event-text {
   float: left;
   padding-left: 140px;
   display: inline;
-  max-width: 300px;
+  max-width: 400px;
 }
-img.teen{
+.event-imgs{
   float: right;
   width: 150px;
   margin: 20px;
@@ -164,6 +165,9 @@ img.teen{
   margin: 0;
   padding-left: 200px;
   padding-right: 200px;
+}
+.about img {
+  width: 100px;
 }
 .resources {
   background-color: #cccccc;

@@ -41,12 +41,16 @@
 
 <!--Intro-->
 <div class="section-body intro" id="intro">
-    <img src="images/teen4.jpg" alt="Teens coding"/>
+    <img class="clearfix" src="images/teen4.jpg" alt="Teens coding"/>
     <h2>Welcome!</h2>
-    <p class="intro">Southwest Coder Dojo is a coding club for teens who want to learn computer programming.  We are part of an international organization of coding clubs.</p>
-    <p class="intro">At Dojo meetings mentors work with small groups on an online tutorial in a language like HTML, CSS or Python.</p>
-    <p class="intro">Register to attend--seats are limited.</p>
-    <p class="intro-end">No experience in programming required! </p>
+        <div class="intro-text">
+            <p class="intro-text">Southwest Coder Dojo is a coding club for teens who want to learn computer programming.  We are part of an international organization of coding clubs.</p>
+            <p class="intro-text">At Dojo meetings mentors work with small groups on an online tutorial in a language like HTML, CSS or Python.</p>
+            <p></p>
+            <p class="intro-text">Register to attend--seats are limited.</p>
+            <p></p>
+            <p class="intro-end">No experience in programming required! </p>
+        </div>
 </div>
 <!--Why Code-->
 <div class="section-body why" id="why">
@@ -54,25 +58,33 @@
     <p class="why">It's fun, and creative!  Make websites, apps, games and more...</p>
     <p class="why">It's an essential skill, like reading or writing.</p>
     <p class="why">Learning to code can lead to a great job! </p>
-    <iframe class="why" width="700" height="390" src="https://www.youtube.com/embed/qYZF6oIZtfc" frameborder="0" allowfullscreen></iframe>
-    <!--<video width="320" height="240" controls>-->
-        <!--<source src="movie.mp4" type="video/mp4">-->
-        <!--<source src="movie.ogg" type="video/ogg">-->
-        <!--Your browser does not support the video tag.-->
-    <!--</video>-->
+        <div class="why-video"></div>
+            <iframe width="700" height="390" src="https://www.youtube.com/embed/qYZF6oIZtfc" frameborder="0" allowfullscreen>
+
+            </iframe>
+            <!--<video width="320" height="240" controls>-->
+                <!--<source src="movie.mp4" type="video/mp4">-->
+                <!--<source src="movie.ogg" type="video/ogg">-->
+                <!--Your browser does not support the video tag.-->
+            <!--</video>-->
+        </div>
 </div>
 <!--Events-->
 <div class="section-body events" id="events">
-    <h2 class="events">Events</h2>
-    <p class="events">Dojo meetings are intended for beginners.  At the Dojo we'll work through an online tutorial together. Mentors can help with personal coding project questions at the end of the meeting.</p>
-    <p class="events"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Register </a>to reserve a ticket and bring your laptop, charger and earbuds.</p>
-    <p class="events"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Next Dojo: </a>Saturday, October 31, 3-4:30pm Walker Library</p>
-    <p class="events">Subscribe to receive email updates about future Dojo events.</p>
-    <img class="teen" id="one" src="images/teen1.jpg" alt="Teens at a computer"/>
-    <img class="teen" id="two" src="images/teen2.jpg" alt="Teens in the computer center"/>
-    <form>
-        <input class="events" type="email" placeholder="Your email address">
-    </form>
+    <div id="event-text">
+        <h2 class="events">Events</h2>
+        <p class="events">Dojo meetings are intended for beginners.  At the Dojo we'll work through an online tutorial together. Mentors can help with personal coding project questions at the end of the meeting.</p>
+        <p class="events"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Register </a>to reserve a ticket and bring your laptop, charger and earbuds.</p>
+        <p class="events"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Next Dojo: </a>Saturday, October 31, 3-4:30pm Walker Library</p>
+        <p class="events">Subscribe to receive email updates about future Dojo events.</p>
+            <form>
+                <input class="events" type="email" placeholder="Your email address">
+            </form>
+        </div>
+        <div event-imgs>
+        <img class="teen" id="one" src="images/teen1.jpg" alt="Teens at a computer"/>
+        <img class="teen" id="two" src="images/teen2.jpg" alt="Teens in the computer center"/>
+    </div>
 </div>
 <!--FAQs-->
 <div class="section-body faqs" id="faqs">
