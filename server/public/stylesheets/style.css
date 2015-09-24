@@ -170,10 +170,10 @@ input.event-text {
 }
 .faqs {
   background-color: #dd7e6b;
+  color: #ffffff;
   /*background-image: url(//dewiskbohv5c1.cloudfront.net/assets/bg-difference-doing-12c2d93e6e6a32c79cb764e0a0b16e42.jpg);*/
-  color: white;
   margin-top: 0;
-  padding: 0 225px 0 140px;
+  padding: 0 200px 0 225px;
 }
 h2.faqs {
   padding: 50px 0 20px 0;
@@ -183,8 +183,9 @@ h2.faqs {
   padding-left: 20px;
 }
 .faqs .a {
-  color: #f5f5f5;
+  /*color: #f5f5f5;*/
   font-style: italic;
+  color: #cccccc;
   padding-left: 30px;
 }
 .faqs .end{
@@ -196,42 +197,68 @@ h2.faqs {
   padding: 0 140px 0 220px;
 }
 h2.about{
-  padding: 30px 0 15px 220px;
+  padding: 50px 0 15px 200px;
 }
 p.about {
   padding-bottom: 10px;
 }
 .contact {
   background-color: #ff9e0d;
-  padding: 0 140px 0 220px;
 }
-h2.contact{
-  padding: 0px 0 15px 0px;
+h2.contact {
+  padding: 10px 0 0 200px;
 }
-.contact input{
+.contact input {
   margin: 10px;
-  padding: 0;
+  margin-left: 220px;
+  width: 250px;
   display: block;
 }
-.contact input-end{
+.contact .input-end {
   padding-bottom: 30px;
+  width: 250px;
 }
 .about img {
-  padding-top: 30px;
+  padding-top: 50px;
   width: 150px;
   float: left;
 }
 .resources {
   background-color: #cccccc;
   margin: 0;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding: 0 140px 0 200px;
+}
+.resources img{
+  padding-top: 50px;
+  width: 600px;
+}
+h2.resources{
+  padding: 50px 0 15px 20px;
+}
+.resources .tag {
+  font-weight: bold;
+  padding-left: 20px;
+}
+.resources .descr {
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .footer {
   background-color: #434343;
+  color: #f5f5f5;
   font-size: 50%;
   margin: 0;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  /*display: inline-block;*/
 }
+.footer-text .left{
+  float: left;
+  display: inline;
+}
+.footer-text .right{
+  float: right;
+}
+
 
