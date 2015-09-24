@@ -195,19 +195,31 @@ h2.faqs {
   margin-top: 0;
   padding: 0 140px 0 220px;
 }
-h2.about {
-  padding: 50px 0 20px 0;
+h2.about{
+  padding: 30px 0 15px 220px;
 }
 p.about {
   padding-bottom: 10px;
 }
-input.about {
-  margin: 20px;
+.contact {
+  background-color: #ff9e0d;
+  padding: 0 140px 0 220px;
+}
+h2.contact{
+  padding: 0px 0 15px 0px;
+}
+.contact input{
+  margin: 10px;
   padding: 0;
   display: block;
 }
+.contact input-end{
+  padding-bottom: 30px;
+}
 .about img {
-  width: 120px;
+  padding-top: 30px;
+  width: 150px;
+  float: left;
 }
 .resources {
   background-color: #cccccc;
