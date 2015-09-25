@@ -159,17 +159,18 @@ input.event-text {
 .event-imgs{
   margin: 20px;
   padding: 0;
-  width: 250px;
+  width: 300px;
   background-color: #cccccc;
 }
 .clearfix {
   overflow: auto;
 }
 .faqs {
-  background-color: #dd7e6b;
+  background-color: #e8330c;
   color: #ffffff;
   /*background-image: url(//dewiskbohv5c1.cloudfront.net/assets/bg-difference-doing-12c2d93e6e6a32c79cb764e0a0b16e42.jpg);*/
   margin-top: 0;
+  margin-bottom: 0;
   padding: 0 200px 0 225px;
 }
 h2.faqs {
@@ -185,11 +186,11 @@ h2.faqs {
   color: #cccccc;
   padding-left: 30px;
 }
-.faqs .end{
+.faqs p:last-child {
   padding-bottom: 30px;
 }
 .about {
-  background-color: #ff9e0d;
+  background-color: #cccccc;
   margin-top: 0;
   padding: 0 140px 0 220px;
 }
@@ -199,14 +200,25 @@ h2.about{
 p.about {
   padding-bottom: 10px;
 }
+.about img {
+  padding-top: 50px;
+  width: 150px;
+  float: left;
+}
 .contact {
-  background-color: #ff9e0d;
+  background-color: #cccccc;
 }
 h2.contact {
   padding: 10px 0 0 200px;
 }
+.pure-control-group label {
+  padding-left: 100px;
+}
+.pure-controls button {
+  margin-left: 120px;
+}
 .contact input {
-  margin: 10px 10px 10px 20px;
+  margin: 10px 10px 0 10px;
   width: 250px;
   display: block;
 }
@@ -214,13 +226,9 @@ h2.contact {
   padding-bottom: 30px;
   width: 250px;
 }
-.about img {
-  padding-top: 50px;
-  width: 150px;
-  float: left;
-}
+
 .resources {
-  background-color: #cccccc;
+  background-color: #ff9e0d;
   margin: 0;
   padding: 0 140px 0 225px;
 }
@@ -229,7 +237,7 @@ h2.contact {
   width: 800px;
 }
 h2.resources{
-  padding: 50px 0 15px 20px;
+  padding: 30px 0 15px 20px;
 }
 .resources .tag {
   font-weight: bold;
@@ -239,21 +247,32 @@ h2.resources{
   padding-left: 20px;
   padding-bottom: 20px;
 }
+p.resources .descr:last-child {
+  padding-bottom: 30px;
+}
 .footer {
   background-color: #434343;
   color: #f5f5f5;
-  font-size: 50%;
+  font-size: 70%;
   margin: 0;
+  width: 100%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 45px;
   display: inline-block;
 }
-.footer-text .left{
-  float: left;
-  display: inline;
+.footer-left {
+  padding-left: 70px;
 }
-.footer-text .right{
-  float: right;
+p.footer-left{
+  text-align: left;
+  margin: 5px;
+}
+.footer-right {
+  padding-right: 30px;
+}
+p.footer-right{
+  text-align: right;
+  margin: 5px;
 }
 
 
