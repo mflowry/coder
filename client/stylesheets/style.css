@@ -71,7 +71,6 @@ div {
   color: white;
   text-align: center;
 }
-
 .navbar {
   height: 30px;
   position: fixed;
@@ -166,12 +165,12 @@ input.event-text {
   overflow: auto;
 }
 .faqs {
-  background-color: #e8330c;
+  background-color: #e87422;
   color: #ffffff;
   /*background-image: url(//dewiskbohv5c1.cloudfront.net/assets/bg-difference-doing-12c2d93e6e6a32c79cb764e0a0b16e42.jpg);*/
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0 200px 0 225px;
+  padding: 0 160px 0 225px;
 }
 h2.faqs {
   padding: 50px 0 20px 0;
@@ -214,7 +213,7 @@ h2.contact {
 .pure-control-group label {
   padding-left: 100px;
 }
-.pure-controls button {
+.contact-button {
   margin-left: 120px;
 }
 .contact input {
@@ -256,8 +255,8 @@ p.resources .descr:last-child {
   font-size: 70%;
   margin: 0;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: inline-block;
 }
 .footer-left {
