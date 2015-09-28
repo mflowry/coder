@@ -47,12 +47,18 @@
   font-weight: normal;
   font-style: normal;
 }
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  /* Set your content font stack here: */
+  font-family: ubunturegular, tahoma, helvetica, sans-serif;
+}
 
 body {
   margin: 0;
   border: 0;
   padding: 0;
-  font: 18px/24px ubunturegular, tahoma, helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 120%;
   position: relative;
   background-color: #f5f5f5;
 }
@@ -66,7 +72,7 @@ div {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 45px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   font-size: 250%;
   color: white;
   text-align: center;
@@ -95,24 +101,22 @@ div {
   color: white;
   text-decoration: none;
   font-size: 85%;
-  text-shadow: 1px 0px 3px #434343;
+  text-shadow: 1px 0 3px #434343;
 }
 .intro {
   background-color: #f5f5f5;
   margin: 0;
-  padding: 15px 180px 100px 140px;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 .intro h2 {
-  padding-top: 15px;
+  padding: 10px 0 0 20px;
 }
 .intro-text {
-  padding: 0;
-  display: inline;
-  max-width: 500px;
+  padding: 0 0 0 20px;
 }
 .intro-end {
-  display: inline;
-  padding-bottom: 50px;
+  padding: 0 0 25px 20px;
 }
 .intro img {
   width:340px;
@@ -123,8 +127,8 @@ div {
 .why{
   background-color: #434343;
   margin: 0;
-  padding-left: 140px;
-  padding-right: 200px;
+  /*padding-left: 140px;*/
+  /*padding-right: 200px;*/
 }
 .why h2 {
   padding: 50px 0 20px 0;
@@ -135,13 +139,16 @@ div {
   color: #f5f5f5;
 }
 iframe {
-  margin: 30px 125px 50px;
+  margin: 30px 0 50px;
   background-color: #434343;
+}
+.why-img{
+  max-width: 100%;
 }
 .events {
   background-color: #cccccc;
   margin-top: 0;
-  padding: 0 225px 0 140px;
+  padding: 0;
 }
 .event-text {
   padding-top: 40px;
@@ -162,8 +169,10 @@ input.event-text {
 .event-imgs{
   margin: 20px;
   padding: 0;
-  width: 300px;
   background-color: #cccccc;
+}
+.event-button {
+  margin-left: -35px;
 }
 .clearfix {
   overflow: auto;
@@ -174,7 +183,7 @@ input.event-text {
   /*background-image: url(//dewiskbohv5c1.cloudfront.net/assets/bg-difference-doing-12c2d93e6e6a32c79cb764e0a0b16e42.jpg);*/
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0 160px 0 225px;
+  padding: 0;
 }
 h2.faqs {
   padding: 50px 0 20px 0;
@@ -188,7 +197,7 @@ h2.faqs {
   font-style: italic;
   color: #cccccc;
   padding-left: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 .faqs p:last-child {
   padding-bottom: 30px;
@@ -196,48 +205,43 @@ h2.faqs {
 .about {
   background-color: #cccccc;
   margin-top: 0;
-  padding: 0 140px 0 220px;
+  padding: 0;
 }
 h2.about{
-  padding: 50px 0 15px 200px;
+  padding: 50px 0 15px 20px;
 }
 p.about {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
+  padding-left: 20px
 }
 .about img {
   padding-top: 50px;
-  width: 150px;
+  max-width: 150px;
   float: left;
 }
 .contact {
   background-color: #cccccc;
 }
 h2.contact {
-  padding: 10px 0 0 200px;
+  padding: 10px 0 0 20px;
 }
-.pure-control-group label {
-  padding-left: 100px;
-}
-.contact-button {
-  margin-left: 120px;
-}
-.contact input {
+input.contact {
   margin: 10px 10px 0 10px;
   width: 250px;
   display: block;
 }
-.contact .input-end {
-  padding-bottom: 30px;
-  width: 250px;
+input.contact-button {
+  margin-left: 114px;
+  width: 150px;
 }
 .resources {
   background-color: #FF9E30;
   margin: 0;
-  padding: 0 140px 0 225px;
+  padding: 0;
 }
 .resources img{
   padding-top: 50px;
-  width: 800px;
+  max-width: 700px;
 }
 h2.resources{
   padding: 30px 0 15px 20px;
@@ -265,14 +269,14 @@ h2.resources{
   display: inline-block;
 }
 .footer-left {
-  /*padding-left: 70px;*/
+  padding-left: 70px;
 }
 p.footer-left{
   text-align: left;
   margin: 5px;
 }
 .footer-right {
-  /*padding-right: 30px;*/
+  padding-right: 30px;
 }
 p.footer-right{
   text-align: right;

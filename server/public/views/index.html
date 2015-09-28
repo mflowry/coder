@@ -25,39 +25,49 @@
 <!--Navbar-->
     <div class="navbar">
         <ul class="pure-g main-nav">
-            <li class="nav-item pure-u-4-24"><a href="#why">Why?</a></li>
-            <li class="nav-item pure-u-4-24"><a href="#events">Events</a></li>
-            <li class="nav-item pure-u-4-24"><a href="#faqs">FAQs</a></li>
-            <li class="nav-item pure-u-4-24"><a href="#about">About</a></li>
-            <li class="nav-item pure-u-4-24"><a href="#resources">Resources</a></li>
-            <li class="nav-item pure-u-4-24"><a href="/volunteer">Volunteer</a></li>
+            <li class="nav-item pure-u-12-24 pure-u-md-8-24 pure-u-lg-4-24"><a href="#why">Why?</a></li>
+            <li class="nav-item pure-u-12-24 pure-u-md-8-24 pure-u-lg-4-24"><a href="#events">Events</a></li>
+            <li class="nav-item pure-u-12-24 pure-u-md-8-24 pure-u-lg-4-24"><a href="#faqs">FAQs</a></li>
+            <li class="nav-item pure-u-12-24 pure-u-md-8-24 pure-u-lg-4-24"><a href="#about">About</a></li>
+            <li class="nav-item pure-u-12-24 pure-u-md-8-24 pure-u-lg-4-24"><a href="#resources">Resources</a></li>
+            <li class="nav-item pure-u-12-24 pure-u-md-8-24 pure-u-lg-4-24"><a href="/volunteer">Volunteer</a></li>
         </ul>
     </div>
 <!--Title-->
-    <h1>Southwest Coder Dojo</h1>
-<!--</div>-->
+    <div class="title pure-g">
+        <div class="pure-u-sm-1 pure-u-md-6-24">  </div>
+            <h1 class="pure-u-sm-1 pure-u-md-12-24">Southwest Coder Dojo</h1>
+        <div class="pure-u-sm-1 pure-u-md-6-24">  </div>
+    </div>
+</div>
 
 <!--Intro-->
-<div class="section-body intro" id="intro">
-    <img class="clearfix pure-img" src="../images/teen4.jpg" alt="Teens coding"/>
-    <h2>Welcome!</h2>
-        <div class="intro-text">
-            <p class="intro-text">Southwest Coder Dojo is a coding club for teens who want to learn computer programming.  We are part of an international organization of coding clubs.</p>
-            <p class="intro-text">At Dojo meetings mentors work with small groups on an online tutorial in a language like HTML, CSS or Python.</p>
-            <p></p>
-            <p class="intro-text">Register to attend--seats are limited.</p>
-            <p></p>
-            <p class="intro-end">No experience in programming required! </p>
+<div class="section-body intro pure-g" id="intro">
+    <div class="pure-u-4-24">  </div>
+        <div class="pure-u-6-24">
+        <img class="pure-img" src="../images/teen4.jpg" alt="Teens coding"/>
         </div>
+    <div class="intro pure-u-10-24">
+        <h2>Welcome!</h2>
+            <p class="intro intro-text">Southwest Coder Dojo is a coding club for teens who want to learn computer programming.  We are part of an international organization of coding clubs.</p>
+            <p class="intro intro-text">At Dojo meetings mentors work with small groups on an online tutorial in a language like HTML, CSS or Python.</p>
+            <p></p>
+            <p class="intro intro-text">Register to attend--seats are limited.</p>
+            <p></p>
+            <p class="intro intro-end">No experience in programming required! </p>
+        </div>
+    <div class="pure-u-4-24">  </div>
 </div>
 <!--Why Code-->
-<div class="section-body why" id="why">
+<div class="section-body why pure-g" id="why">
+    <div class="pure-u-1 pure-u-md-6-24">  </div>
+        <div class="pure-u-1 pure-u-md-12-24">
     <h2 class="why">Why learn to code?</h2>
     <p class="why">It's fun and creative!  Make websites, apps, games and more...</p>
     <p class="why">It's an essential skill, like reading or writing.</p>
     <p class="why">Learning to code can lead to a great job! </p>
         <div class="why-video"></div>
-            <iframe width="700" height="390" src="https://www.youtube.com/embed/qYZF6oIZtfc" frameborder="0" allowfullscreen>
+            <iframe class="why-img" width="700" height="390" src="https://www.youtube.com/embed/qYZF6oIZtfc" frameborder="0" allowfullscreen>
 
             </iframe>
             <!--<video width="320" height="240" controls>-->
@@ -66,10 +76,13 @@
                 <!--Your browser does not support the video tag.-->
             <!--</video>-->
         </div>
+    <div class="pure-u-1 pure-u-md-6-24">  </div>
+</div>
 
 <!--Events-->
 <div class="section-body events pure-g" id="events">
-    <div class="event-text pure-u-12-24">
+    <div class="pure-u-1 pure-u-md-4-24">  </div>
+    <div class="event-text pure-u-10-24">
         <h2 class="event-text">Events</h2><p></p>
         <p class="event-text">Dojo meetings are intended for beginners.  At the Dojo we'll work through an online tutorial in a programming language such as HTLML, CSS or Python. If you have questions about a personal coding project, mentors will be available to help towards the end of the meeting.</p><p></p>
         <p class="event-text"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Register</a>&nbsp;to reserve a ticket and bring your laptop, charger and earbuds.</p><p></p>
@@ -85,89 +98,104 @@
                         <input class="event-text" type="email" id="email" placeholder="Your email address">
                     </div>
                     <div class="pure-controls">
-                        <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                        <button type="submit" class="event-button pure-button pure-button-primary">Submit</button>
                     </div>
                 </fieldset>
             </form>
     </div>
-    <div class="event-imgs pure-u-6-24">
+    <div class="event-imgs pure-u-6-24 ">
             <img class="event-imgs pure-img" id="one" src="../images/Teen1.jpg" alt="Teens at a computer"/>
             <img class="event-imgs pure-img" id="two" src="../images/teen2.jpg" alt="Teens in the computer center"/>
     </div>
+    <div class="pure-u-1 pure-u-md-4-24">  </div>
 </div>
 <!--FAQs-->
-<div class="section-body faqs" id="faqs">
-    <h2 class="faqs">Frequently Asked Questions</h2>
-    <p class="faqs q">What is a Dojo?</p>
-    <p class="faqs a">It's a club where kids learn to code.</p>
-    <p class="faqs q">How old do you have to be to participate?</p>
-    <p class="faqs a">Our Dojo is for teens ages 13-18.</p>
-    <p class="faqs q">What if my parents want to come along?</p>
-    <p class="faqs a">Parents can find a comfy place to wait for you at the library.  Since parents are not participants, they do not need tickets.</p>
-    <p class="faqs q">Who are the volunteers?</p>
-    <p class="faqs a">Our mentors are members of the community with some coding experience.  Many are parents of Southwest High School students.  All adult volunteers have background checks on file.</p>
-    <p class="faqs q">What should I bring to a Dojo meeting?</p>
-    <p class="faqs a">Bring your laptop, power charger and earbuds.</p>
-    <p class="faqs q">What if I don’t have a laptop?</p>
-    <p class="faqs a">If you have a library card, you can sign up to use a library computer.  Or check out <a href="http://www.minneapolismn.gov/it/inclusion/WCMS1P-105252">this list </a>of low cost computer and internet resources.</p>
+<div class="section-body faqs pure-g" id="faqs">
+    <div class="pure-u-1 pure-u-md-5-24">  </div>
+        <div class="pure-u-1 pure-u-md-14-24">
+            <h2 class="faqs">Frequently Asked Questions</h2>
+            <p class="faqs q">What is a Dojo?</p>
+            <p class="faqs a">It's a club where kids learn to code.</p>
+            <p class="faqs q">How old do you have to be to participate?</p>
+            <p class="faqs a">Our Dojo is for teens ages 13-18.</p>
+            <p class="faqs q">What if my parents want to come along?</p>
+            <p class="faqs a">Parents can find a comfy place to wait for you at the library.  Since parents are not participants, they do not need tickets.</p>
+            <p class="faqs q">Who are the volunteers?</p>
+            <p class="faqs a">Our mentors are members of the community with some coding experience.  Many are parents of Southwest High School students.  All adult volunteers have background checks on file.</p>
+            <p class="faqs q">What should I bring to a Dojo meeting?</p>
+            <p class="faqs a">Bring your laptop, power charger and earbuds.</p>
+            <p class="faqs q">What if I don’t have a laptop?</p>
+            <p class="faqs a">If you have a library card, you can sign up to use a library computer.  Or check out <a href="http://www.minneapolismn.gov/it/inclusion/WCMS1P-105252">this list </a>of low cost computer and internet resources.</p>
+        </div>
+    <div class="pure-u-1 pure-u-md-5-24">  </div>
 </div>
 <!--About-->
-<div class="section-body about" id="about">
-    <img class="pure-img" src="../images/dojo logo.png" alt="Coder Dojo International logo"/>
-    <h2 class="about">About Southwest Coder Dojo</h2>
-    <p class="about">Southwest Coder Dojo is a member of <a href="https://coderdojo.com/">Coder Dojo International.</a>  It was founded in partnership with Southwest High School to provide introductory coding experiences for teens in the Southwest Minneapolis area.</p>
-    <p class="about">Many of the volunteers are Southwest High School parents and include professional software developers and software industry professionals from local companies.</p>
+<div class="section-body pure-g about" id="about">
+    <div class="pure-u-1 pure-u-md-3-24">  </div>
+        <div class="pure-u-1 pure-u-md-3-24">
+        <img class="pure-img" src="../images/dojo logo.png" alt="Coder Dojo International logo"/>
+        </div>
+    <div class="pure-u-1 pure-u-md-14-24">
+        <h2 class="about">About Southwest Coder Dojo</h2>
+        <p class="about">Southwest Coder Dojo is a member of <a href="https://coderdojo.com/">Coder Dojo International.</a>  It was founded in partnership with Southwest High School to provide introductory coding experiences for teens in the Southwest Minneapolis area.</p>
+        <p class="about">Many of the volunteers are Southwest High School parents and include professional software developers and software industry professionals from local companies.</p>
 <!--Contact-->
-    <div class="contact" ng-controller="formController" id="contact">
-        <h2 class="contact">Questions? Comments? Contact Us</h2>
-        <form ng-submit="processForm()" class="contact pure-form pure-form-aligned">
-            <fieldset>
-                <div class="pure-control-group" ng-class="{ 'has-error' : errorName }">
-                    <label for="name">Name</label>
-                    <input class="contact" type="text" id="name" ng-model="formData.name" placeholder="Your name">
-                    <span class="help-block" ng-show="errorName">{{errorName}}</span>
-                </div>
-                <div class="pure-control-group" ng-class="{ 'has-error' : errorfromEmail }">
-                    <label for="fromEmail">Email</label>
-                    <input class="contact" type="email" id="fromEmail" ng-model="formData.fromEmail" placeholder="Your email">
-                    <span class="help-block" ng-show="errorfromEmail"></span>
-                </div>
-                <div class="pure-control-group" ng-class="{ 'has-error' : errorSubject }">
-                    <label for="subject">Subject</label>
-                    <input class="contact" type="text" id="subject" ng-model="formData.subject" placeholder="Subject">
-                    <span class="help-block" ng-show="errorSubject"></span>
-                </div>
-                <div class="pure-control-group" ng-class="{ 'has-error' : errorMessage }">
-                    <label for="message">Message</label>
-                    <input class="contact input-end" type="text" id="message" ng-model="formData.message" placeholder="Your message">
-                    <span class="help-block" ng-show="errorMessage"></span>
-                </div>
-                <div class="pure-controls contact">
-                    <input type="submit" class="contact-button pure-button pure-button-primary">Send</input>
-                </div>
-            </fieldset>
-        </form>
-    </div>
-</div>
+        <div class="contact" ng-controller="formController" id="contact">
+            <h2 class="contact">Questions? Comments? Contact Us</h2>
+            <form ng-submit="processForm()" class="contact pure-form pure-form-aligned">
+                <fieldset>
+                    <div class="pure-control-group" ng-class="{ 'has-error' : errorName }">
+                        <label for="name">Name</label>
+                        <input class="contact" type="text" id="name" ng-model="formData.name" placeholder="Your name">
+                        <span class="help-block" ng-show="errorName">{{errorName}}</span>
+                    </div>
+                    <div class="pure-control-group" ng-class="{ 'has-error' : errorfromEmail }">
+                        <label for="fromEmail">Email</label>
+                        <input class="contact" type="email" id="fromEmail" ng-model="formData.fromEmail" placeholder="Your email">
+                        <span class="help-block" ng-show="errorfromEmail">{{errorfromEmail}}</span>
+                    </div>
+                    <div class="pure-control-group" ng-class="{ 'has-error' : errorSubject }">
+                        <label for="subject">Subject</label>
+                        <input class="contact" type="text" id="subject" ng-model="formData.subject" placeholder="Subject">
+                        <span class="help-block" ng-show="errorSubject">{{errorSubject}}</span>
+                    </div>
+                    <div class="pure-control-group" ng-class="{ 'has-error' : errorMessage }">
+                        <label for="message">Message</label>
+                        <input class="contact input-end" type="text" id="message" ng-model="formData.message" placeholder="Your message">
+                        <span class="help-block" ng-show="errorMessage">{{errorMessage}}</span>
+                    </div>
+                    <div class="pure-controls contact-submit">
+                        <input type="submit" class="contact-button pure-button pure-button-primary">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        </div>
+     <div class="pure-u-1 pure-u-md-4-24">  </div>
+  </div>
 
 <!--Resources-->
-<div class="section-body resources" id="resources">
-    <img class="pure-img" src="../images/teen3.jpg" alt="Gathering of teens with computer"/>
-    <h2 class="resources">Resources: Online Coding Tutorials</h2>
-    <p class="resources tag"><a href="https://dash.generalassemb.ly/">General Assembly Dash</a></p>
-    <p class="resources descr">Dash teaches HTML, CSS and Javascript through fun onliine projects.</p>
+<div class="section-body resources pure-g" id="resources">
+    <div class="pure-u-1 pure-u-md-4-24">  </div>
+        <div class="pure-u-1 pure-u-md-16-24">
+            <img class="pure-img" src="../images/teen3.jpg" alt="Teens gathered at a computer"/>
+            <h2 class="resources">Resources: Online Coding Tutorials</h2>
+            <p class="resources tag"><a href="https://dash.generalassemb.ly/">General Assembly Dash</a></p>
+            <p class="resources descr">Dash teaches HTML, CSS and Javascript through fun online projects.</p>
 
-    <p class="resources tag"><a href="https://www.codecademy.com/">CodeAcademy</a></p>
-    <p class="resources descr">Learn to code interactively in HTML, CSS, Javascript, Python, Ruby, PHP and more.</p>
+            <p class="resources tag"><a href="https://www.codecademy.com/">CodeAcademy</a></p>
+            <p class="resources descr">Learn to code interactively in HTML, CSS, Javascript, Python, Ruby, PHP and more.</p>
 
-    <p class="resources tag"><a href="https://studio.code.org/flappy/1"> Code.org: Hour of Code</a></p>
-    <p class="resources descr">Watch this tutorial and create your own Flappy Bird game.</p>
+            <p class="resources tag"><a href="https://studio.code.org/flappy/1"> Code.org: Hour of Code</a></p>
+            <p class="resources descr">Watch this tutorial and create your own Flappy Bird game.</p>
 
-    <p class="resources tag"><a href="http://appinventor.mit.edu/explore/ai2/beginner-videos.html">MIT App Inventor</a></p>
-    <p class="resources descr">Beginner-friendly tutorials to learn the basics of programming apps for Android.</p>
+            <p class="resources tag"><a href="http://appinventor.mit.edu/explore/ai2/beginner-videos.html">MIT App Inventor</a></p>
+            <p class="resources descr">Beginner-friendly tutorials to learn the basics of programming apps for Android.</p>
 
-    <p class="resources tag"><a href="https://www.khanacademy.org/computing/computer-programming"> Khan Academy</a></p>
-    <p class="resources-end">Interactive online courses in JavaScript, HTML/CSS, and SQL.</p>
+            <p class="resources tag"><a href="https://www.khanacademy.org/computing/computer-programming"> Khan Academy</a></p>
+            <p class="resources-end">Interactive online courses in JavaScript, HTML/CSS, and SQL.</p>
+        </div>
+    <div class="pure-u-1 pure-u-md-4-24">  </div>
 </div>
 <!--Footer-->
 <div class="section-body footer pure-g" id="footer">
