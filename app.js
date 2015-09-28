@@ -4,21 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var nodemailer = require('nodemailer');
 var index = require('./server/routes/index');
 var volunteer = require('./server/routes/volunteer');
 var send =  require('./server/routes/send');
 
 var app = express();
 
-//create reusable transporter object using SMTP transport
-var transporter = nodemailer.createTransport({
-  service: 'Gmail',
-  auth: {
-    user: 'swcoderdojo@gmail.com',
-    pass: 'Dojo2015'
-  }
-});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -48,9 +39,8 @@ app.use(function(req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
     console.log(err);
-    res.send('error', {
+    res.status(err.status || 500).send({
       message: err.message,
       error: err
     });
@@ -60,9 +50,8 @@ if (app.get('env') === 'development') {
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
   console.log(err);
-  res.send('error', {
+  res.status(err.status || 500).send({
     message: err.message,
     error: {}
   });
@@ -70,4 +59,3 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
-//module.exports = transporter;

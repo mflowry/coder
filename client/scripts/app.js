@@ -1,47 +1,16 @@
 var app = angular.module('formApp', []);
-//var transporter = require('transporter');
-//var transport = require('some-transport-method');
-//var bodyParser = require('body-parser');
-//var formApp = angular.module('formApp', []);
-
-
-// send.html mail with defined transport object
-transporter.sendMail(mailOptions, function(error, info){
-    if(error){
-        return console.log(error);
-    }
-    console.log('Message sent: ' + info.response);
-});
 
 app.controller('formController', ['$scope', '$http', function ($scope, $http) {
-    var to = 'swcoderdojo@gmail.com';
-    var from, subject, text;
-    var apiKey = "'api:key-3188ca5ee2af760410a61c6e3772fc7a' ";
-    var url = "https://api.mailgun.net/v3/sandboxf36386f5333e47e5b0875382c7ab6094.mailgun.org/messages ";
-    var mailMessage = "curl -s --user" + apikey + url + " -F from='<" + from + ">' -F to=" + to + " -F subject='" + subject + "' -F text='" + text + "'";
-
-    $scope.formData = {from: formData.fromEmail, subject: formData.subject, text: formData.message};
 
     $scope.processForm = function () {
         console.log("Posting...");
         $http({
             method: 'POST',
-            url: '/send',//do I need to create send.html.html and send.js files, too?
+            url: '/send',
             data: $scope.formData,
             dataType: 'json'
         }).then(function (response) {
-            console.log(mailMessage);
-            //transport.send(data, callback);
-            if (!data.success) {
-                // if not successful, bind errors to error variables
-                $scope.errorName = data.errors.name;
-                $scope.errorfromEmail = data.errors.fromEmail;
-                $scope.errorSubject = data.errors.subject;
-                $scope.errorMessage = data.errors.message;
-            } else {
-                // if successful, bind success message to message
-                $scope.message = data.message;
-            }
+            console.log(response);
         })
     };
 }]);

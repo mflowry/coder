@@ -15,7 +15,6 @@
     <link rel='stylesheet' href="../stylesheets/style.css">
     <script type="text/javascript" src="../assets/scripts/jquery-1.11.3.min.js"></script>
     <script src="../vendors/angular/angular.min.js"></script>
-    <script src="../vendors/angular/angular.min.js.map"></script>
     <script type="text/javascript" src="../assets/scripts/app.min.js"></script>
     <base href="/">
     <title>Southwest Coder Dojo</title>
@@ -144,7 +143,7 @@
                     <span class="help-block" ng-show="errorMessage"></span>
                 </div>
                 <div class="pure-controls contact">
-                    <button ng-click="processForm()" class="contact-button pure-button pure-button-primary">Send</button>
+                    <input type="submit" class="contact-button pure-button pure-button-primary">Send</input>
                 </div>
             </fieldset>
         </form>
@@ -172,6 +171,7 @@
 </div>
 <!--Footer-->
 <div class="section-body footer pure-g" id="footer">
+    <div class="pure-u-2-24"><p></p></div>
     <div class="footer-text">
         <div class="footer-left pure-u-10-24">
             <p class="footer-left">Copyright 2015 Southwest Coder Dojo.</p>
@@ -182,6 +182,7 @@
             <p class="footer-right">Privacy Policy</p>
         </div>
     </div>
+    <div class="pure-u-2-24"><p></p></div>
 </div>
 
 </body>

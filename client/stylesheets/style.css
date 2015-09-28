@@ -265,14 +265,14 @@ h2.resources{
   display: inline-block;
 }
 .footer-left {
-  padding-left: 70px;
+  /*padding-left: 70px;*/
 }
 p.footer-left{
   text-align: left;
   margin: 5px;
 }
 .footer-right {
-  padding-right: 30px;
+  /*padding-right: 30px;*/
 }
 p.footer-right{
   text-align: right;
