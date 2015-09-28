@@ -52,8 +52,7 @@ body {
   margin: 0;
   border: 0;
   padding: 0;
-  font-family: "ubunturegular", "tahoma", "helvetica", "sans-serif";
-  font-size: 18/20px;
+  font: 18px/24px ubunturegular, tahoma, helvetica, sans-serif;
   position: relative;
   background-color: #f5f5f5;
 }
@@ -66,8 +65,8 @@ div {
 .header h1 {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 35px;
-  padding-bottom: 10px;
+  padding-top: 45px;
+  padding-bottom: 25px;
   font-size: 250%;
   color: white;
   text-align: center;
@@ -75,7 +74,7 @@ div {
 .navbar {
   height: 30px;
   position: fixed;
-  top: 0px;
+  top: 0;
   background-color: #FF5300;
   z-index: 9999;
   width: 100%;
@@ -103,6 +102,9 @@ div {
   margin: 0;
   padding: 15px 180px 100px 140px;
 }
+.intro h2 {
+  padding-top: 15px;
+}
 .intro-text {
   padding: 0;
   display: inline;
@@ -116,6 +118,7 @@ div {
   width:340px;
   float: left;
   padding-right: 25px;
+  padding-top: 30px;
 }
 .why{
   background-color: #434343;
@@ -141,12 +144,12 @@ iframe {
   padding: 0 225px 0 140px;
 }
 .event-text {
-  padding-top: 30px;
+  padding-top: 40px;
   display: inline;
   font-family: "ubunturegular", "tahoma", "helvetica", "sans-serif";
 }
-h2.event-text {
-  padding-top: 60px;
+.event-text h2{
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 p.event-text {
@@ -185,6 +188,7 @@ h2.faqs {
   font-style: italic;
   color: #cccccc;
   padding-left: 30px;
+  padding-bottom: 10px;
 }
 .faqs p:last-child {
   padding-bottom: 30px;
@@ -206,7 +210,6 @@ p.about {
   float: left;
 }
 .contact {
-  margin-top: 40px;
   background-color: #cccccc;
 }
 h2.contact {
@@ -285,5 +288,12 @@ p.footer-right{
 }
 .volunteer-end {
   padding-bottom: 40px;
+}
+.has-error {
+  color: red;
+  font-size: 80%
+}
+.ng-hide {
+  display: none;
 }
 

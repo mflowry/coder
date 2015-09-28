@@ -15,14 +15,13 @@
     <link rel='stylesheet' href="../stylesheets/style.css">
     <script type="text/javascript" src="../assets/scripts/jquery-1.11.3.min.js"></script>
     <script src="../vendors/angular/angular.min.js"></script>
-    <script src="../vendors/angular/angular-route.min.js"></script>
+    <script src="../vendors/angular/angular.min.js.map"></script>
     <script type="text/javascript" src="../assets/scripts/app.min.js"></script>
     <base href="/">
     <title>Southwest Coder Dojo</title>
 </head>
 <!--Header-->
-
-<body>
+<body ng-app="formApp">
 <div class="header">
 <!--Navbar-->
     <div class="navbar">
@@ -35,9 +34,9 @@
             <li class="nav-item pure-u-4-24"><a href="/volunteer">Volunteer</a></li>
         </ul>
     </div>
-    <!--Title-->
+<!--Title-->
     <h1>Southwest Coder Dojo</h1>
-</div>
+<!--</div>-->
 
 <!--Intro-->
 <div class="section-body intro" id="intro">
@@ -55,7 +54,7 @@
 <!--Why Code-->
 <div class="section-body why" id="why">
     <h2 class="why">Why learn to code?</h2>
-    <p class="why">It's fun, and creative!  Make websites, apps, games and more...</p>
+    <p class="why">It's fun and creative!  Make websites, apps, games and more...</p>
     <p class="why">It's an essential skill, like reading or writing.</p>
     <p class="why">Learning to code can lead to a great job! </p>
         <div class="why-video"></div>
@@ -72,7 +71,7 @@
 <!--Events-->
 <div class="section-body events pure-g" id="events">
     <div class="event-text pure-u-12-24">
-        <h2 class="event-text ">Events</h2><p></p>
+        <h2 class="event-text">Events</h2><p></p>
         <p class="event-text">Dojo meetings are intended for beginners.  At the Dojo we'll work through an online tutorial in a programming language such as HTLML, CSS or Python. If you have questions about a personal coding project, mentors will be available to help towards the end of the meeting.</p><p></p>
         <p class="event-text"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Register</a>&nbsp;to reserve a ticket and bring your laptop, charger and earbuds.</p><p></p>
         <div class="event-text">
@@ -119,29 +118,33 @@
     <h2 class="about">About Southwest Coder Dojo</h2>
     <p class="about">Southwest Coder Dojo is a member of <a href="https://coderdojo.com/">Coder Dojo International.</a>  It was founded in partnership with Southwest High School to provide introductory coding experiences for teens in the Southwest Minneapolis area.</p>
     <p class="about">Many of the volunteers are Southwest High School parents and include professional software developers and software industry professionals from local companies.</p>
-    <!--Contact-->
-    <div class="contact" id="contact">
+<!--Contact-->
+    <div class="contact" ng-controller="formController" id="contact">
         <h2 class="contact">Questions? Comments? Contact Us</h2>
-        <form class="contact pure-form pure-form-aligned">
+        <form ng-submit="processForm()" class="contact pure-form pure-form-aligned">
             <fieldset>
-                <div class="pure-control-group">
+                <div class="pure-control-group" ng-class="{ 'has-error' : errorName }">
                     <label for="name">Name</label>
-                    <input class="contact" type="text" id="name" placeholder="Your name">
+                    <input class="contact" type="text" id="name" ng-model="formData.name" placeholder="Your name">
+                    <span class="help-block" ng-show="errorName">{{errorName}}</span>
                 </div>
-                <div class="pure-control-group">
-                    <label for="email">Email</label>
-                    <input class="contact" type="email" id="email" placeholder="Your email">
+                <div class="pure-control-group" ng-class="{ 'has-error' : errorfromEmail }">
+                    <label for="fromEmail">Email</label>
+                    <input class="contact" type="email" id="fromEmail" ng-model="formData.fromEmail" placeholder="Your email">
+                    <span class="help-block" ng-show="errorfromEmail"></span>
                 </div>
-                <div class="pure-control-group">
-                    <label for="Subject">Subject</label>
-                    <input class="contact" type="text" id="Subject" placeholder="Subject">
+                <div class="pure-control-group" ng-class="{ 'has-error' : errorSubject }">
+                    <label for="subject">Subject</label>
+                    <input class="contact" type="text" id="subject" ng-model="formData.subject" placeholder="Subject">
+                    <span class="help-block" ng-show="errorSubject"></span>
                 </div>
-                <div class="pure-control-group">
-                    <label for="Message">Message</label>
-                    <input class="contact input-end" type="text" id="Message" placeholder="Your message">
+                <div class="pure-control-group" ng-class="{ 'has-error' : errorMessage }">
+                    <label for="message">Message</label>
+                    <input class="contact input-end" type="text" id="message" ng-model="formData.message" placeholder="Your message">
+                    <span class="help-block" ng-show="errorMessage"></span>
                 </div>
                 <div class="pure-controls contact">
-                    <button type="submit" class="contact-button pure-button pure-button-primary">Submit</button>
+                    <button ng-click="processForm()" class="contact-button pure-button pure-button-primary">Send</button>
                 </div>
             </fieldset>
         </form>
