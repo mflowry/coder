@@ -300,4 +300,11 @@ p.footer-right{
 .ng-hide {
   display: none;
 }
+#mc_embed_signup {
+  background:#fff;
+  clear:left;
+  font-size:14px;
+  /*Helvetica,Arial,sans-serif;  */
+  width:300px;
+}
 
