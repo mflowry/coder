@@ -166,6 +166,12 @@ input.event-text {
   margin: 20px;
   padding: 0;
 }
+img.event-icons {
+  max-width: 45px;
+  margin: 5px;
+  display: inline;
+  /*float: right;*/
+}
 .event-imgs{
   margin: 20px;
   padding: 0;
@@ -280,8 +286,14 @@ p.footer-left{
   padding-right: 30px;
 }
 p.footer-right{
-  text-align: right;
-  margin: 5px;
+ float: right;
+  margin-top: 15px;
+}
+img.footer-icons {
+  max-width: 25px;
+  margin-bottom: -4px;
+  display: inline;
+  float: right;
 }
 .volunteer {
   background-color: #FF9E30;
