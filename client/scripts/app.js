@@ -11,6 +11,7 @@ app.controller('formController', ['$scope', '$http', function ($scope, $http) {
             dataType: 'json'
         }).then(function (response) {
             console.log(response);
+            alert("Thanks, your message was sent.")
         })
     };
 }]);
