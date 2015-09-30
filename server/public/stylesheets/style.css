@@ -183,7 +183,6 @@ img.event-icons {
 .event-imgs{
   margin: 20px;
   padding: 0;
-  background-color: #cccccc;
 }
 .event-button {
   margin-left: -35px;
@@ -200,7 +199,7 @@ img.event-icons {
   padding: 50px 0 0 0;
 }
 h2.faqs {
-  color: #696969;
+  color: #000000;
 }
 .faqs .q {
   font-weight: bold;
@@ -209,7 +208,7 @@ h2.faqs {
 }
 .faqs .a {
   font-style: italic;
-  color: #696969;
+  color: #000000;
   padding-left: 30px;
   padding-top: 6px;
 }
@@ -362,19 +361,20 @@ p.volunteer-end  {
 }
 
 @media (max-width: 600px) {
-  .nav-bar {
+  ul.main-nav:hover {
+    display: block;
+  }
+  .nav-item {
     display: none;
   }
   .wide img {
-    width: 80% !important;
+    width: 90% !important;
     margin: 0 auto;
   }
   p.wide {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
-  .nav-bar:hover {
-    display: block;
-  }
+
 }
 
