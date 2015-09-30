@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="../vendors/pure-release-0.6.0/pure-min.css" >
-    <!--[if lte IE 8]>
+    <!--[if lte IE 8]><!-->
     <link rel="stylesheet" href="../vendors/pure-release-0.6.0/grids-responsive-old-ie-min.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
@@ -22,8 +22,14 @@
 <!--Header-->
 <body ng-app="formApp">
 <div class="header">
+<!--Title-->
+    <div class="header title pure-g">
+        <div class="header pure-u-sm-1 pure-u-md-6-24">  </div>
+            <h1 class="header pure-u-sm-1 pure-u-md-12-24">Southwest Coder Dojo</h1>
+        <div class="header pure-u-sm-1 pure-u-md-6-24">  </div>
+    </div>
 <!--Navbar-->
-    <div class="navbar">
+    <div class="header navbar">
         <ul class="pure-g main-nav">
             <li class="nav-item pure-u-12-24 pure-u-md-8-24 pure-u-lg-4-24"><a href="#why">Why?</a></li>
             <li class="nav-item pure-u-12-24 pure-u-md-8-24 pure-u-lg-4-24"><a href="#events">Events</a></li>
@@ -33,14 +39,7 @@
             <li class="nav-item pure-u-12-24 pure-u-md-8-24 pure-u-lg-4-24"><a href="/volunteer">Volunteer</a></li>
         </ul>
     </div>
-<!--Title-->
-    <div class="title pure-g">
-        <div class="pure-u-sm-1 pure-u-md-6-24">  </div>
-            <h1 class="pure-u-sm-1 pure-u-md-12-24">Southwest Coder Dojo</h1>
-        <div class="pure-u-sm-1 pure-u-md-6-24">  </div>
-    </div>
 </div>
-
 <!--Intro-->
 <div class="section-body intro pure-g" id="intro">
     <div class="pure-u-4-24">  </div>
@@ -49,8 +48,8 @@
         </div>
     <div class="intro pure-u-10-24">
         <h2>Welcome!</h2>
-            <p class="intro intro-text">Southwest Coder Dojo is a coding club for teens who want to learn computer programming.  We are part of an international organization of coding clubs.</p>
-            <p class="intro intro-text">At Dojo meetings mentors work with small groups on an online tutorial in a language like HTML, CSS or Python.</p>
+            <p class="intro intro-text">Southwest Coder Dojo is a coding club for teens who want to learn computer programming in Southwest Minneapolis.  We are part of an international organization of free, volunteer-led coding clubs.</p><br>
+            <p class="intro intro-text">At Dojo meetings mentors work with small groups on an online lesson in a language like HTML, CSS or Python.</p>
             <p></p>
             <p class="intro intro-text">Register to attend--seats are limited.</p>
             <p></p>
@@ -82,14 +81,14 @@
 <!--Events-->
 <div class="section-body events pure-g" id="events">
     <div class="pure-u-1 pure-u-md-4-24">  </div>
-    <div class="event-text pure-u-10-24">
+    <div class="events event-text pure-u-10-24">
         <h2 class="event-text">Events</h2><p></p>
-        <p class="event-text">Dojo meetings are intended for beginners.  At the Dojo we'll work through an online tutorial in a programming language such as HTLML, CSS or Python. If you have questions about a personal coding project, mentors will be available to help towards the end of the meeting.</p><p></p>
-        <p class="event-text"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Register</a>&nbsp;to reserve a ticket and bring your laptop, charger and earbuds.</p><p></p>
+        <p class="event-text">Dojo meetings are intended for beginners and those without prior coding experience.  At the Dojo we'll separate into small groups to work through online tutorials in a programming languages such as HTLML, CSS or Python based on your interests.  If you don't know what language to learn, we'll help you decide.  For those that need help with a personal coding project, mentors will be available to help towards the end of the meeting.</p><p></p>
+        <p class="event-text"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Register:</a>&nbsp;to reserve a ticket and bring your laptop, charger and earbuds.</p><p></p>
         <div class="event-text">
-            <p class="event-text"><a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Next Dojo:</a>&nbsp;&nbsp;Saturday, October 31, 3 - 4:30pm</p><br>
+            <a href="https://www.eventbrite.com/e/southwest-coder-dojo-tickets-18706025225">Next Dojo:</a> <p class="event-text">&nbsp;&nbsp;Saturday, October 31, 3 - 4:30pm</p><br>
             <p class="event-text">Calhoun Meeting Room at <a href="http://www.hclib.org/about/locations/walker">Walker Library</a></p><br>
-            <p class="event-text">2800 Hennepin Ave., Minneapolis, MN 55408</p><p></p>
+            <p class="event-text">2880 Hennepin Ave., Minneapolis, MN 55408</p><p></p>
             <p class="event-text">Subscribe to receive updates about future Dojo events:</p>
         </div>
         <!-- Begin MailChimp Signup Form -->
@@ -150,8 +149,8 @@
         </div>
     <div class="pure-u-1 pure-u-md-14-24">
         <h2 class="about">About Southwest Coder Dojo</h2>
-        <p class="about">Southwest Coder Dojo is a member of <a href="https://coderdojo.com/">Coder Dojo International.</a>  It was founded in partnership with Southwest High School to provide introductory coding experiences for teens in the Southwest Minneapolis area.</p>
-        <p class="about">Many of the volunteers are Southwest High School parents and include professional software developers and software industry professionals from the Twin Cities area.</p>
+        <p class="about">Southwest Coder Dojo is a member of <a href="https://coderdojo.com/">Coder Dojo International.</a>  It was founded with the idea of providing introductory coding experiences for teens in the Southwest Minneapolis area.</p>
+        <p class="about">Many of the volunteers are parents of current and former Southwest High School students and include professional software developers and software industry professionals from the Twin Cities.</p>
 <!--Contact-->
         <div class="contact" ng-controller="formController" id="contact">
             <h2 class="contact">Questions? Comments? Contact Us</h2>
