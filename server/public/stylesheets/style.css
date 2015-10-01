@@ -65,6 +65,9 @@ body {
   position: relative;
   background-color: #f5f5f5;
 }
+.section-body {
+  width: 100%;
+}
 div {
   display: block;
 }
@@ -85,6 +88,7 @@ div {
   font-size: 225%;
   color: white;
   text-align: center;
+  width: 100%;
 }
 .navbar {
   height: 25px;
@@ -125,27 +129,24 @@ div {
 .intro-text {
   padding: 0 0 0 20px;
 }
-.intro-end {
-  padding: 0 0 25px 20px;
-}
-.intro img {
+
+.intro-img {
   width:340px;
   float: left;
   padding-right: 25px;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .why{
   background-color: #2e7ac7;
   margin: 0;
   padding-top: 50px;
 }
-.why h2 {
+.why-text h2 {
   color: #f5f5f5;
-  padding-bottom: 15px;
+  padding-top: 20px;
 }
-.why p {
+.why-text {
   padding-left: 0;
-  padding-top: 7px;
   color: #f5f5f5;
 }
 iframe {
@@ -180,7 +181,7 @@ img.event-icons {
   display: inline;
   /*float: right;*/
 }
-.event-imgs{
+.event-img {
   margin: 20px;
   padding: 0;
 }
@@ -199,7 +200,7 @@ img.event-icons {
   padding: 50px 0 0 0;
 }
 h2.faqs {
-  color: #000000;
+  color: #ffffff;
 }
 .faqs .q {
   font-weight: bold;
@@ -281,6 +282,7 @@ h2.resources{
   background-color: #fbcc33;
   color: #000000;
   font-size: 70%;
+  line-height: 100%
   margin: 0;
   width: 100%;
   display: inline-block;
@@ -293,11 +295,13 @@ p.footer-left{
   margin: 5px;
 }
 .footer-right {
-  padding-right: 30px;
+  /*padding-right: 30px;*/
 }
 p.footer-right{
  float: right;
-  margin-top: 15px;
+}
+.iubenda-ibadge {
+  margin-top: 0;
 }
 img.footer-icons {
   max-width: 25px;
@@ -354,27 +358,66 @@ p.volunteer-end  {
 .navbar {
   display: block;
 }
-
-
-@media (max-width: 700px) {
-
-}
-
 @media (max-width: 600px) {
-  ul.main-nav:hover {
-    display: block;
+  body {
+    font-size:14px;
+    line-height: 105%;
+  }
+  .section-body {
+    width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+  .header {
+    position: static;
+  }
+  .header h1 {
+    font-size: 175%;
+  }
+  .navbar {
+    display: none;
   }
   .nav-item {
     display: none;
   }
-  .wide img {
-    width: 90% !important;
+  .intro, .intro-img {
+    width: 90%;
     margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
-  p.wide {
+  .intro-img img {
+    padding: 40px 0 0 33px;
+  }
+  .why {
+    padding-top: 20px;
+  }
+  .why-text, .why-video {
     width: 90%;
     margin: 0 auto;
   }
-
+  .events {
+    padding-top: 20px;
+  }
+  .event-text, .event-img {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .faqs {
+    padding: 20px 0 0 10px;
+    width: 100%;
+  }
+  .faqs-text, h2.faqs {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .faqs .a, .faqs .q, h2.faqs{
+    padding-left: 0;
+  }
 }
 
