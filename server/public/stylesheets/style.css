@@ -79,6 +79,10 @@ div {
   margin-bottom: 0;
   width: 100%;
 }
+.header a {
+  color: white;
+  text-decoration: none;
+}
 .header h1 {
   background-color: #ed462f;
   z-index: 9999;
@@ -86,6 +90,7 @@ div {
   margin-top: 0;
   position: fixed;
   font-size: 225%;
+  text-decoration: none;
   color: white;
   text-align: center;
   width: 100%;
